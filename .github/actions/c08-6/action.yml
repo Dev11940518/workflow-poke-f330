@@ -1,0 +1,6 @@
+name: c08-6
+description: depth 6
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/c08-7
