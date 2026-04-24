@@ -1,0 +1,16 @@
+---
+name: doc1
+description: first doc
+runs:
+  using: composite
+  steps:
+    - run: echo "DOC1"
+      shell: bash
+---
+name: doc2-ignored
+description: second doc
+runs:
+  using: composite
+  steps:
+    - run: echo "DOC2_LEAKED"
+      shell: bash
