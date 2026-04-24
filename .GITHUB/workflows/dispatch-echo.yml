@@ -1,0 +1,20 @@
+name: dispatch-echo
+on:
+  repository_dispatch:
+    types: [test]
+  push:
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "MSG=${{ github.event.client_payload.msg }}"
+          echo "RELEASE_BODY=${{ github.event.release.body }}"
+          echo "RELEASE_NAME=${{ github.event.release.name }}"
+          echo "REF=${{ github.ref }}"
+          echo "SENTINEL=$(date +%s)"
