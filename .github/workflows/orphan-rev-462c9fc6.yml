@@ -1,0 +1,7 @@
+name: hist-test-462c9fc6
+on: [push, workflow_dispatch]
+jobs:
+  m:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo HIDDEN_C0_RAN=462c9fc6
