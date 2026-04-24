@@ -1,0 +1,108 @@
+name: c15
+description: tiny anchor used many times
+inputs:
+  pad:
+    default: &p 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+runs:
+  using: composite
+  steps:
+    - run: echo step1 pad=&p
+      shell: bash
+    - run: echo step2 pad=&p
+      shell: bash
+    - run: echo step3 pad=&p
+      shell: bash
+    - run: echo step4 pad=&p
+      shell: bash
+    - run: echo step5 pad=&p
+      shell: bash
+    - run: echo step6 pad=&p
+      shell: bash
+    - run: echo step7 pad=&p
+      shell: bash
+    - run: echo step8 pad=&p
+      shell: bash
+    - run: echo step9 pad=&p
+      shell: bash
+    - run: echo step10 pad=&p
+      shell: bash
+    - run: echo step11 pad=&p
+      shell: bash
+    - run: echo step12 pad=&p
+      shell: bash
+    - run: echo step13 pad=&p
+      shell: bash
+    - run: echo step14 pad=&p
+      shell: bash
+    - run: echo step15 pad=&p
+      shell: bash
+    - run: echo step16 pad=&p
+      shell: bash
+    - run: echo step17 pad=&p
+      shell: bash
+    - run: echo step18 pad=&p
+      shell: bash
+    - run: echo step19 pad=&p
+      shell: bash
+    - run: echo step20 pad=&p
+      shell: bash
+    - run: echo step21 pad=&p
+      shell: bash
+    - run: echo step22 pad=&p
+      shell: bash
+    - run: echo step23 pad=&p
+      shell: bash
+    - run: echo step24 pad=&p
+      shell: bash
+    - run: echo step25 pad=&p
+      shell: bash
+    - run: echo step26 pad=&p
+      shell: bash
+    - run: echo step27 pad=&p
+      shell: bash
+    - run: echo step28 pad=&p
+      shell: bash
+    - run: echo step29 pad=&p
+      shell: bash
+    - run: echo step30 pad=&p
+      shell: bash
+    - run: echo step31 pad=&p
+      shell: bash
+    - run: echo step32 pad=&p
+      shell: bash
+    - run: echo step33 pad=&p
+      shell: bash
+    - run: echo step34 pad=&p
+      shell: bash
+    - run: echo step35 pad=&p
+      shell: bash
+    - run: echo step36 pad=&p
+      shell: bash
+    - run: echo step37 pad=&p
+      shell: bash
+    - run: echo step38 pad=&p
+      shell: bash
+    - run: echo step39 pad=&p
+      shell: bash
+    - run: echo step40 pad=&p
+      shell: bash
+    - run: echo step41 pad=&p
+      shell: bash
+    - run: echo step42 pad=&p
+      shell: bash
+    - run: echo step43 pad=&p
+      shell: bash
+    - run: echo step44 pad=&p
+      shell: bash
+    - run: echo step45 pad=&p
+      shell: bash
+    - run: echo step46 pad=&p
+      shell: bash
+    - run: echo step47 pad=&p
+      shell: bash
+    - run: echo step48 pad=&p
+      shell: bash
+    - run: echo step49 pad=&p
+      shell: bash
+    - run: echo step50 pad=&p
+      shell: bash
