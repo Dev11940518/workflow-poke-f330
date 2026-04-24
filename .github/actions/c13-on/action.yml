@@ -1,0 +1,8 @@
+on: push
+name: c13
+description: action.yml with on: trigger - parser tolerance test
+runs:
+  using: composite
+  steps:
+    - run: echo C13
+      shell: bash
