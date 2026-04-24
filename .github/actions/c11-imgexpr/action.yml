@@ -1,0 +1,9 @@
+name: c11
+description: docker image from expression
+runs:
+  using: docker
+  image: ${{ inputs.attacker_image }}
+inputs:
+  attacker_image:
+    description: any image
+    default: alpine:3.19
