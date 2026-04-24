@@ -1,0 +1,6 @@
+on: push
+jobs:
+  x:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo TECH-A5-CAPS-DIR
