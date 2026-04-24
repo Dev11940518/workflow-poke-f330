@@ -1,0 +1,12 @@
+name: c14
+description: double-expression interpolation test
+inputs:
+  outer:
+    default: "$${{ github.event.issue.title }}"
+  inner:
+    default: "${{ inputs.outer }}"
+runs:
+  using: composite
+  steps:
+    - run: echo OUT=${{ inputs.outer }} IN=${{ inputs.inner }}
+      shell: bash
