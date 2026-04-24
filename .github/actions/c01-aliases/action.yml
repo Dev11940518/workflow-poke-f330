@@ -1,0 +1,15 @@
+
+defaults: &d
+  shell: bash
+
+name: aliases-test
+description: tests YAML aliases
+inputs:
+  greeting:
+    description: hi
+    default: hello
+runs:
+  using: composite
+  steps:
+    - <<: *d
+      run: echo "ALIAS_TEST_${{ inputs.greeting }}"
