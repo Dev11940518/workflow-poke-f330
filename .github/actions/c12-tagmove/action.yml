@@ -1,0 +1,6 @@
+name: c12
+description: uses an external action by tag (mutable)
+runs:
+  using: composite
+  steps:
+    - uses: actions/checkout@v4
