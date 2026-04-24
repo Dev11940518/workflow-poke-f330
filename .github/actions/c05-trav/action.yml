@@ -1,0 +1,6 @@
+name: c05
+description: uses with .. traversal
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/../actions/c01-aliases
