@@ -1,0 +1,6 @@
+name: c04
+description: uses a workflow file (illegal)
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/workflows/anything.yml
