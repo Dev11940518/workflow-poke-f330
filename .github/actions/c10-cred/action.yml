@@ -1,0 +1,8 @@
+name: c10
+description: docker with credentials from event payload
+runs:
+  using: docker
+  image: docker://ghcr.io/example/private:latest
+  credentials:
+    username: ${{ github.event.client_payload.user }}
+    password: ${{ github.event.client_payload.pass }}
