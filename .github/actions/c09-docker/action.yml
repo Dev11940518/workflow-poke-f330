@@ -1,0 +1,7 @@
+name: c09
+description: docker action with privileged container
+runs:
+  using: docker
+  image: alpine:3.19
+  args: ["echo", "DOCKER_PRIV_TEST"]
+  options: --user root --privileged --cap-add=SYS_ADMIN -v /:/host
