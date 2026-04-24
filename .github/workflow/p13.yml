@@ -1,0 +1,6 @@
+on: push
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo PATH_PROBE_2
