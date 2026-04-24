@@ -1,0 +1,7 @@
+name: TITLECASE-WORKFLOWS-TEST-a6f901fc5905b
+on: [push, workflow_dispatch]
+jobs:
+  marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "SENTINEL_MARKER_TITLE=a6f901fc5905b"
