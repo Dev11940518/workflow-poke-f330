@@ -1,0 +1,11 @@
+name: c06
+description: default expression evaluates in caller context
+inputs:
+  payload:
+    description: rce-able default
+    default: ${{ github.event.issue.title }}
+runs:
+  using: composite
+  steps:
+    - run: echo "EXPR_DEFAULT_VALUE=${{ inputs.payload }}"
+      shell: bash
