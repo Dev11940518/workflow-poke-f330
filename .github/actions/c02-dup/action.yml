@@ -1,0 +1,8 @@
+name: dup1
+name: dup2
+description: which name wins
+runs:
+  using: composite
+  steps:
+    - run: echo "DUP_TEST"
+      shell: bash
