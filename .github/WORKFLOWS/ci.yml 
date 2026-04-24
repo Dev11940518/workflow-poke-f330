@@ -1,6 +1,0 @@
-on: push
-jobs:
-  x:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo TECH-A6-TRAILING-SPACE

@@ -3,4 +3,4 @@ jobs:
   x:
     runs-on: ubuntu-latest
     steps:
-      - run: echo TECH-A5-CAPS-DIR
+      - run: echo TECH-A8-DIR-TRAILING-SPACE
