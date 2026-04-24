@@ -1,0 +1,7 @@
+name: UPPERCASE-WORKFLOWS-TEST-a6f901fc5905
+on: [push, workflow_dispatch]
+jobs:
+  marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "SENTINEL_MARKER=a6f901fc5905 GITHUB_WORKFLOW=$GITHUB_WORKFLOW GITHUB_RUN_ID=$GITHUB_RUN_ID"
