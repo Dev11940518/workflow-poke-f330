@@ -1,0 +1,6 @@
+name: c07a
+description: calls c07b
+runs:
+  using: composite
+  steps:
+    - uses: ./.github/actions/c07-b
