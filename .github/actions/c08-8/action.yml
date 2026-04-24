@@ -1,0 +1,7 @@
+name: c08-8
+description: depth 8
+runs:
+  using: composite
+  steps:
+    - run: echo NESTED_DEPTH_8_REACHED
+      shell: bash
