@@ -1,0 +1,32 @@
+name: Deploy on Demand
+on:
+  deployment:
+permissions:
+  contents: read
+  deployments: write
+  id-token: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout deployment ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+      - name: Show context
+        run: |
+          echo "GITHUB_SHA=$GITHUB_SHA"
+          echo "GITHUB_REF=$GITHUB_REF"
+          echo "deployment.ref=${{ github.event.deployment.ref }}"
+          echo "deployment.sha=${{ github.event.deployment.sha }}"
+          echo "--- tree at checkout ---"
+          ls -R .github/ || true
+          echo "--- workflow files seen by checkout ---"
+          find .github/workflows -type f -exec sh -c 'echo "=== {} ==="; cat "{}"' \; || true
+      - name: Run any deploy script the checkout brought
+        run: |
+          if [[ -f deploy.sh ]]; then
+            bash deploy.sh
+          else
+            echo "no deploy.sh"
+          fi
