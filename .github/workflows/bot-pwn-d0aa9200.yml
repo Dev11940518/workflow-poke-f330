@@ -1,0 +1,8 @@
+name: bot-pwn-d0aa9200
+on: { release: { types: [published, edited, released] } }
+permissions: { contents: read, id-token: write }
+jobs:
+  fire:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "BOT_PWN_d0aa9200 action=\ actor=\Dev11940518 via_GHTOKEN=true"
