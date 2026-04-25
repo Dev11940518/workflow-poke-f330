@@ -1,0 +1,19 @@
+name: booby-1e056d9d
+on:
+  release:
+    types: [published, unpublished, created, edited, deleted, prereleased, released]
+  delete:
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  fire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Identify trigger and burn ID
+        run: |
+          echo "BOOBY_1e056d9d_FIRED action=${{ github.event.action || github.event_name }} event=${{ github.event_name }}"
+          echo "  release_id=${{ github.event.release.id || '-' }}"
+          echo "  ref_type=${{ github.event.ref_type || '-' }}"
+          echo "  ref=${{ github.event.ref || '-' }}"
+          echo "  GITHUB_TOKEN_LEN=${#GITHUB_TOKEN}"
