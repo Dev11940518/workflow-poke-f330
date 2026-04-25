@@ -1,0 +1,7 @@
+name: api-only-z2-7913a86b
+on: deployment
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "SENTINEL_API_NEW_WF_DEPLOY=7913a86b"
