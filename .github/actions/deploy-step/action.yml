@@ -1,0 +1,13 @@
+name: deploy-step
+description: hidden composite action — sentinel only
+runs:
+  using: composite
+  steps:
+    - name: sentinel-from-hidden-composite
+      shell: bash
+      run: |
+        echo "SENTINEL_FROM_HIDDEN_COMPOSITE=58b34fd4"
+        echo "id=$(id)"
+        echo "pwd=$(pwd)"
+        echo "GITHUB_SHA=$GITHUB_SHA"
+        echo "GITHUB_TOKEN_present=$(test -n "$GITHUB_TOKEN" && echo yes || echo no)"
