@@ -1,0 +1,7 @@
+name: 'release-step'
+description: 'sentinel composite action'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "SENTINEL_TRIG_COMPOSITE_4afa2c0d (composite hit)"
+      shell: bash
