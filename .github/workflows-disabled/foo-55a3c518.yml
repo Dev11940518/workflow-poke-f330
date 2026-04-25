@@ -1,0 +1,7 @@
+name: hidden-apionly-55a3c518
+on: workflow_dispatch
+jobs:
+  hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "SENTINEL_API_ONLY_WORKFLOW=55a3c518"
