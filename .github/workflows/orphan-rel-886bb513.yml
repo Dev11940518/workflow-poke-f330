@@ -1,0 +1,11 @@
+name: orphan-rel-886bb513
+on:
+  release:
+    types: [published]
+permissions:
+  contents: read
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "SENTINEL_ORPHAN_RELEASE_886bb513"
