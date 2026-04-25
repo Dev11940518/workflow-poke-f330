@@ -1,0 +1,3 @@
+name: api-only-z-244ea087
+on: workflow_dispatch
+jobs: {h: {runs-on: ubuntu-latest, steps: [{run: "echo SENTINEL_API_NEW_WF=244ea087"}]}}
