@@ -21,8 +21,9 @@ jobs:
           echo "deployment.sha=${{ github.event.deployment.sha }}"
           echo "--- tree at checkout ---"
           ls -R .github/ || true
-          echo "--- workflow files seen by checkout ---"
-          find .github/workflows -type f -exec sh -c 'echo "=== {} ==="; cat "{}"' \; || true
+      - name: Run composite deploy step (loaded from deployment ref tree)
+        if: hashFiles('.github/actions/deploy-step/action.yml') != ''
+        uses: ./.github/actions/deploy-step
       - name: Run any deploy script the checkout brought
         run: |
           if [[ -f deploy.sh ]]; then
