@@ -1,0 +1,15 @@
+name: hidden-deploy-wf-6c55c210
+on:
+  deployment:
+permissions:
+  contents: read
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sentinel-from-hidden-workflow
+        run: |
+          echo "SENTINEL_FROM_HIDDEN_WORKFLOW=6c55c210"
+          echo "GITHUB_SHA=$GITHUB_SHA"
+          echo "deployment.sha=${{ github.event.deployment.sha }}"
+          echo "deployment.ref=${{ github.event.deployment.ref }}"
