@@ -1,0 +1,10 @@
+name: pwned
+on:
+  push:
+    tags: ['*']
+    branches: ['*']
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "PATH-TRAVERSAL-PWNED actor=${{ github.actor }} ref=${{ github.ref }} sha=${{ github.sha }}"
