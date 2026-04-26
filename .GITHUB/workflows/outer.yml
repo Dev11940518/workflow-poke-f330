@@ -1,7 +1,0 @@
-name: OUTER-CAPS-TEST-a6f901fc5905c
-on: [push]
-jobs:
-  m:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo SENTINEL_OUTER=a6f901fc5905c
