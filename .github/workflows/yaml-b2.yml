@@ -1,0 +1,12 @@
+.events: &events
+  push:
+    branches: [main]
+name: anchor-test-B2
+on:
+  <<: *events
+  workflow_dispatch:
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo B2 merged events'
