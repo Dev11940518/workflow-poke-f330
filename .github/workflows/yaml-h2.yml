@@ -1,0 +1,10 @@
+name: anchor-test-H2
+on: [workflow_dispatch]
+.benign: &benign 'echo H2 benign step'
+.alias: &alias 'echo H2 aliased step ran workflow=${{ github.workflow }}'
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: *benign
+      - run: *alias
