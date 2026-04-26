@@ -1,2 +1,0 @@
-# Test F1: export-subst on workflow file
-.github/workflows/ci.yml export-subst
