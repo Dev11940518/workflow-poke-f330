@@ -1,0 +1,9 @@
+.x: &defs
+  on: [workflow_dispatch]
+name: anchor-test-A
+<<: *defs
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A: anchor on top-level expanded"
