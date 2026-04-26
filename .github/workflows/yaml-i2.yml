@@ -1,0 +1,13 @@
+.evil: &evil
+  run: 'echo I2 EVIL merged'
+.normal: &normal
+  run: 'echo I2 normal merged'
+name: anchor-test-I2
+on: [workflow_dispatch]
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - <<: *normal
+        run: 'echo I2 explicit local'
+      - <<: *evil
