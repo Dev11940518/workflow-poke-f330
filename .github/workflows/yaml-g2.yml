@@ -1,0 +1,9 @@
+name: anchor-test-G2
+on: [workflow_dispatch]
+.a: &a
+  b: *a
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo G2 recursive anchor accepted'
