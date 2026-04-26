@@ -1,0 +1,13 @@
+.privileged: &priv
+  pull_request_target:
+    types: [opened]
+name: anchor-test-K
+on:
+  workflow_dispatch:
+  <<: *priv
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - run: echo "K: trigger=${{ github.event_name }} workflow=${{ github.workflow }}"
