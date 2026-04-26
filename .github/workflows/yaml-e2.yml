@@ -1,0 +1,16 @@
+---
+name: anchor-test-E2-doc1
+on: [workflow_dispatch]
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo E2 doc1'
+---
+name: anchor-test-E2-doc2
+on: [push]
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo E2 doc2 RAN multi-doc smuggle worked'
