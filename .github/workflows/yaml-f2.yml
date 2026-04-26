@@ -1,0 +1,7 @@
+name: anchor-test-F2
+on: !!seq [workflow_dispatch]
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo F2 explicit seq tag'
