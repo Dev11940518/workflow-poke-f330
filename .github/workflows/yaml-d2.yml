@@ -1,0 +1,8 @@
+name: anchor-test-D2
+on:
+  workflow_dispatch:
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo D2 unquoted on'
