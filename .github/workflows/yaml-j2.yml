@@ -1,0 +1,9 @@
+.runs: &runs
+  runs-on: ubuntu-latest
+name: anchor-test-J2
+on: [workflow_dispatch]
+jobs:
+  j:
+    <<: *runs
+    steps:
+      - run: 'echo J2 runs-on came from merge'
