@@ -1,0 +1,13 @@
+.evil: &evil
+  run: echo "I: evil merged"
+.normal: &normal
+  run: echo "I: normal merged"
+name: anchor-test-I
+on: [workflow_dispatch]
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - <<: *normal
+        run: echo "I: explicit local"
+      - <<: *evil
