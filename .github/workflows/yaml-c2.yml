@@ -1,0 +1,8 @@
+name: anchor-test-C2
+"on":
+  workflow_dispatch:
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo C2 quoted on'
